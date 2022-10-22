@@ -1,0 +1,121 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package modulpercangan;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author naufa
+ */
+public class sppdandsp {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Pengecekan pembayaran SPP dan DSP");
+        String ulang;
+        do{
+        System.out.println("Pilihan Jalur Masuk :");
+        System.out.println("1. SBMPTN");
+        System.out.println("2. SNMPTN");
+        System.out.println("3. Mandiri");
+        System.out.println("============");
+        System.out.print("Pilihanmu = ");
+        int pilihan = input.nextInt();
+        
+        switch (pilihan){
+            case 1:
+                System.out.println("Pilihan gologan");
+                System.out.println("1. A");
+                System.out.println("2. B");
+                System.out.println("3. C");
+                System.out.println("============");
+                System.out.print("Pilihanmu = ");
+                int golongan = input.nextInt();
+                System.out.println("");
+                
+                switch (golongan){
+                    case 1:
+                        System.out.println("Pembayaran DSPmu sebesar Rp5.000.000,00");
+                        System.out.println("Pembayaran SPPmu sebesar Rp500.000,00");
+                       break;
+                    case 2:
+                        System.out.println("Pembayaran DSPmu sebesar Rp15.000.000,00");
+                        System.out.println("Pembayaran SPPmu sebesar Rp1.000.000,00");
+                       break;
+                    case 3:
+                        System.out.println("Pembayaran DSPmu sebesar Rp30.000.000,00");
+                        System.out.println("Pembayaran SPPmu sebesar Rp2.000.000,00");
+                       break;
+                    default:
+                        System.out.println("Pilihan tidak ada");
+                }
+               break;
+            case 2:
+                System.out.println("Pilihan gologan");
+                System.out.println("1. A");
+                System.out.println("2. B");
+                System.out.println("3. C");
+                System.out.println("============");
+                System.out.print("Pilihanmu = ");
+                int golongan1 = input.nextInt();
+                System.out.println("");
+                
+                switch (golongan1){
+                    case 1 :
+                        System.out.println("Pembayaran DSPmu sebesar Rp7.000.000,00");
+                        System.out.println("Pembayaran SPPmu sebesar Rp500.000,00");
+                       break;
+                    case 2 :
+                        System.out.println("Pembayaran DSPmu sebesar Rp17.000.000,00");
+                        System.out.println("Pembayaran SPPmu sebesar Rp1.000.000,00");
+                       break;
+                    case 3 :
+                        System.out.println("Pembayaran DSPmu sebesar Rp35.000.000,00");
+                        System.out.println("Pembayaran SPPmu sebesar Rp2.000.000,00");
+                       break;
+                    default:
+                        System.out.println("Pilihan tidak ada");
+                }
+               break;
+            case 3:
+                System.out.println("Pilihan gologan");
+                System.out.println("1. A");
+                System.out.println("2. B");
+                System.out.println("3. C");
+                System.out.println("============");
+                System.out.print("Pilihanmu = ");
+                int golongan2 = input.nextInt();
+                System.out.println("");
+                
+                switch (golongan2){
+                    case 1:
+                        System.out.println("Pembayaran DSPmu sebesar Rp10.000.000,00");
+                        System.out.println("Pembayaran SPPmu sebesar Rp1.000.000,00");
+                       break;
+                    case 2:
+                        System.out.println("Pembayaran DSPmu sebesar Rp25.000.000,00");
+                        System.out.println("Pembayaran SPPmu sebesar Rp2.000.000,00");
+                       break;
+                    case 3:
+                        System.out.println("Pembayaran DSPmu sebesar Rp50.000.000,00");
+                        System.out.println("Pembayaran DSPmu sebesar Rp3.000.000,00");
+                       break;
+                    default:
+                        System.out.println("Pilihan tidak ada");
+                }
+               break;
+            default:
+                System.out.println("Pilihan tidak ada");
+           }
+        System.out.println("Apakah anda ingin mengulang?");
+        ulang = input.next();
+        }while (ulang.equalsIgnoreCase("ya"));
+        System.out.println("");
+    System.out.println("Terimakasih, jangan lupa di rate 5 bintang ya! :)");
+        
+ }            
+}
+    
+
